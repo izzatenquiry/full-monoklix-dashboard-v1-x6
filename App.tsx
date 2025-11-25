@@ -971,7 +971,7 @@ const App: React.FC = () => {
             {/* Announcement Ticker - Enhanced for Mobile Full Width */}
             {activeView === 'home' && announcements.length > 0 && (
                 <div className="w-full bg-yellow-300 text-yellow-900 px-4 py-2 text-sm font-medium overflow-hidden relative whitespace-nowrap border-b border-yellow-400 shadow-sm flex-shrink-0 max-w-[100vw]">
-                    <div className="animate-marquee inline-block min-w-full">
+                    <div className="animate-marquee inline-block" style={{ animationDelay: '2s' }}>
                         {announcements.map((ann, index) => (
                             <span key={ann.id} className="mx-8">
                                 <span className="font-bold uppercase text-xs bg-yellow-800 text-yellow-100 px-1.5 py-0.5 rounded mr-2">{ann.category}</span>
