@@ -1,7 +1,8 @@
+
 import React, { useState, useEffect } from 'react';
 import { getContent } from '../../services/contentService';
 import { type TutorialContent, type User, type Language } from '../../types';
-import { ChevronDownIcon, ImageIcon } from '../Icons';
+import { ChevronDownIcon } from '../Icons';
 
 interface ECourseViewProps {
     currentUser: User;
@@ -46,7 +47,6 @@ const ECourseView: React.FC<ECourseViewProps> = ({ currentUser }) => {
             </div>
         </div>
       </div>
-
 
       {content.tutorials.length > 0 && (
         <div>

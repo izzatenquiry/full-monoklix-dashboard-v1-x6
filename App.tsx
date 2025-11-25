@@ -929,9 +929,9 @@ const App: React.FC = () => {
         language={language}
       />
       <main className="flex-1 flex flex-col overflow-y-auto min-w-0 relative">
-        {/* Sticky Header Wrapper */}
-        <div className="sticky top-0 z-20 w-full">
-            <header className="flex items-center justify-between p-2 border-b border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950">
+        {/* Sticky Header Wrapper - Enhanced for Mobile */}
+        <div className="sticky top-0 z-30 w-full bg-white dark:bg-neutral-950 shadow-sm">
+            <header className="flex items-center justify-between p-2 border-b border-neutral-200 dark:border-neutral-800">
               <div className="flex items-center gap-2">
                 <button onClick={() => setIsSidebarOpen(true)} className="p-2 lg:hidden" aria-label={T.openMenu}>
                   <MenuIcon className="w-6 h-6" />
@@ -968,10 +968,10 @@ const App: React.FC = () => {
               </div>
             </header>
 
-            {/* Announcement Ticker */}
+            {/* Announcement Ticker - Enhanced for Mobile Full Width */}
             {activeView === 'home' && announcements.length > 0 && (
-                <div className="bg-yellow-300 text-yellow-900 px-4 py-2 text-sm font-medium overflow-hidden relative whitespace-nowrap border-b border-yellow-400 shadow-sm w-full">
-                    <div className="animate-marquee inline-block">
+                <div className="w-full bg-yellow-300 text-yellow-900 px-4 py-2 text-sm font-medium overflow-hidden relative whitespace-nowrap border-b border-yellow-400 shadow-sm flex-shrink-0 max-w-[100vw]">
+                    <div className="animate-marquee inline-block min-w-full">
                         {announcements.map((ann, index) => (
                             <span key={ann.id} className="mx-8">
                                 <span className="font-bold uppercase text-xs bg-yellow-800 text-yellow-100 px-1.5 py-0.5 rounded mr-2">{ann.category}</span>
