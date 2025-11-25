@@ -25,9 +25,9 @@ const defaultPlatformStatus: PlatformStatus = {
 const defaultAnnouncements: Announcement[] = [
     {
         id: 'anno-1',
-        title: 'PENGUMUMAN!',
-        content: 'Assalamualaikum, untuk makluman. Pihak kami memohon maaf atas kesulitan yang dialami oleh para pengguna sejak beberapa hari lalu berkaitan fungsi penjanaan video (VEO). Isu parameter telah berjaya diselesaikan dan penjanaan video dapat dijalankan pada hari berikutnya. Namun begitu, disebabkan perbezaan token antara IMAGEN dan VEO3, sistem penjana pada masa ini masih belum dapat menghasilkan token VEO3 dalam kuantiti besar secara konsisten. Setiap kali penjanaan dilakukan, majoritinya hanya menghasilkan token bagi IMAGEN, manakala kadar kejayaan token VEO3 ketika ini adalah sekitar 2 daripada 10 percubaan. Untuk makluman, fungsi penjanaan IMAGEN masih beroperasi seperti biasa dan boleh digunakan tanpa sebarang gangguan. Pengguna juga boleh terus menjana stok imej sementara isu berkaitan VEO diselesaikan. Pihak kami sedang menjalankan penyelarasan dan penambahbaikan bagi memastikan sistem kembali stabil dalam masa terdekat. Kami amat menghargai kesabaran dan kefahaman tuan/puan sepanjang tempoh ini. Sekian, terima kasih.',
-        category: 'General',
+        title: 'Assalamualaikum dan salam sejahtera,',
+        content: 'Alhamdulillah, pihak kami ingin memaklumkan bahawa isu berkaitan VEO3 telah berjaya diselesaikan. Fungsi penjanaan video kini kembali stabil dan boleh digunakan seperti biasa.',
+        category: 'PENGUMUMAN!',
         createdAt: new Date().toISOString(),
     },
 ];

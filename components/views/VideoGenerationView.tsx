@@ -83,8 +83,8 @@ const VideoGenerationView: React.FC<VideoGenerationViewProps> = ({ preset, clear
 
   const [includeCaptions, setIncludeCaptions] = useState<'Yes' | 'No'>('No');
   const [includeVoiceover, setIncludeVoiceover] = useState<'Yes' | 'No'>('No');
-  const [voiceoverLanguage, setVoiceoverLanguage] = useState('English');
-  const [voiceoverMood, setVoiceoverMood] = useState('Normal');
+  const [voiceoverLanguage, setVoiceoverLanguage] = useState('Bahasa Malaysia');
+  const [voiceoverMood, setVoiceoverMood] = useState('Energetic');
   const [voiceoverActor, setVoiceoverActor] = useState('Male');
 
 
